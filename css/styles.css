@@ -6,7 +6,7 @@ body {
   font-family: "Roboto", "Arial", sans-serif;
   height: 100vh;
   line-height: 1.3;
-  background: rgb(211, 211, 107);
+  background: rgb(32, 32, 27);
   overflow: hidden;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
@@ -17,7 +17,7 @@ body {
   bottom: 0;
   right: 0;
   height: 100vh;
-  width: 40vw;
+  width: 100vw;
   overflow: hidden;
 }
 
@@ -60,26 +60,28 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
-  width: 75px;
-  height: 75px;
-  background: white;
-  border-radius: 50%;
+  z-index: -3;
+  width: 100px;
+  height: 100px;
+  background: rgb(223, 222, 201);
+  border-radius: 80%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   cursor: pointer;
-  transform-origin: center 70%;
+  transform-origin: center 60%;
   transform: scale(1);
   transition: all 0.35s ease-out;
 }
 
 .material-content {
-  padding: 10% 15%;
+  padding: 20% 15%;
   position: absolute;
   top: 0;
   right: 0;
+  font-family: 'poppins', sans-serif;
+  font-size: 100px;
 }
 .material-content.active {
-  z-index: 2;
+  z-index: 3;
 }
 
 nav ul {
@@ -89,13 +91,13 @@ nav ul {
 }
 nav li {
   will-change: transform, opacity;
-  margin: 25px 0;
-  transform: translateY(100px);
+  margin: 45px 0;
+  transform: translateX(100px);
   opacity: 0;
-  transition: all 0.4s ease-out;
+  transition: all 0.3s ease-out;
 }
 nav li.active {
-  transform: translateY(0);
+  transform: translateX(0);
   opacity: 1;
 }
 nav li:nth-child(1) {
