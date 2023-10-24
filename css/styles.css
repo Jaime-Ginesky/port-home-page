@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Arvo&family=Gruppo&family=Inclusive+Sans&family=Karla:ital,wght@1,500&family=Nixie+One&family=Noto+Sans+SC:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Arvo&family=Gruppo&family=Inclusive+Sans&family=Karla:ital,wght@1,500&family=Nixie+One&family=Noto+Sans+SC:wght@700&display=swap');
+
 * {
   box-sizing: border-box;
 }
+ *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+
 
 body {
   font-family: "Poppins", sans-serif;
@@ -162,7 +170,7 @@ section.active {
   transform: translate(-700px, 0px);
 }
 
-section h1 {
+.home-container h1 {
   white-space: nowrap;
   color: tomato;
   font-family: "Archivo Black", sans-serif;
@@ -171,9 +179,9 @@ section h1 {
   opacity: 80%;
   text-align: left;
   letter-spacing: .05em;
-  line-height: none;
+  /* line-height: none; */
 }
-section h3 {
+.home-container h3 {
   color: azure;
   text-align: left;
   font-size: 2em;
@@ -186,14 +194,13 @@ section h3 {
 }  */
 .slide-down {
   overflow: hidden;
-  padding-bottom: 2em;
+  padding: 2em;
  }
 .slide-down h2 {
   color:azure;
-  font-size: 1.5em;
-  line-height: none;
-  font-weight: 500;
-  animation:1s slide-down 3s forwards;
+  font-size: 1.2em;
+  font-weight: 300;
+  animation:2s slide-down 2s forwards;
   transform:translateY(-100%);
 }
 @keyframes slide-down {
