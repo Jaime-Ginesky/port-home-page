@@ -165,3 +165,13 @@ main p .highlight {
   color: tomato;
   font-size: 4vw;
 }
+
+/* background/text in dark mode */
+.dark-mode-theme {
+  background: #212529;
+  opacity:100%;
+  color: var(--background-color);
+}
+.dark-mode-theme a:hover {
+  color: #7693B6;
+}

@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Arvo&family=Gruppo&family=Inclusive+Sans&family=Karla:ital,wght@1,500&family=Nixie+One&family=Noto+Sans+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Arvo&family=Gruppo&family=Inclusive+Sans&family=Karla:ital,wght@1,500&family=Nixie+One&family=Noto+Sans+SC:wght@700&display=swap');
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: "Poppins", sans-serif;
   height: 100vh;
   line-height: 1.3;
-  background: rgb(32, 32, 27);
+  background: #374049;
   overflow: hidden;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
@@ -37,8 +39,8 @@ body {
   flex-wrap: wrap;
   position: absolute;
   z-index: 2;
-  bottom: 20px;
-  right: 20px;
+  bottom: 25px;
+  right: 25px;
   width: 75px;
   height: 75px;
   background: transparent;
@@ -61,9 +63,9 @@ body {
   top: 0;
   left: 0;
   z-index: -3;
-  width: 100px;
-  height: 100px;
-  background: rgb(223, 222, 201);
+  width: 80px;
+  height: 80px;
+  background: #dbdfdf;
   border-radius: 80%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   cursor: pointer;
@@ -114,9 +116,10 @@ nav li:nth-child(4) {
 }
 nav a {
   text-decoration: none;
-  font-size: 10vw;
+  font-size: 8vw;
   color: tomato;
   font-weight: 400;
+  opacity: 80%;
 }
 
 .material-hamburger {
@@ -124,9 +127,9 @@ nav a {
 }
 .material-hamburger .material-patty {
   will-change: transform, opacity;
-  width: 32px;
+  width: 40px;
   height: 3px;
-  margin: 0 0 6px 0;
+  margin: 6px 0 8px 8px;
   background: #333333;
   opacity: 1;
   transform: translate(0) rotate(0deg);
@@ -145,24 +148,98 @@ nav a {
   transform: translate(-10px, -4px) rotate(45deg) scale(0.5, 1);
 }
 
-main {
+section {
   will-change: transform, opacity;
   width: 80vw;
   height: 100vw;
-  padding: 10vw;
+  padding: 12vw;
   overflow: hidden;
   transition: all 0.35s ease-out;
+  line-height: .3;
 }
-main.active {
+section.active {
   opacity: 0;
   transform: translate(-700px, 0px);
 }
-main p {
-  color: white;
-  font-size: 4vw;
-  font-weight: 300;
-}
-main h1 {
+
+section h1 {
+  white-space: nowrap;
   color: tomato;
-  font-size: 6vw;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-size: 7vw;
+  opacity: 80%;
+  text-align: left;
+  letter-spacing: .05em;
+  line-height: none;
+}
+section h3 {
+  color: azure;
+  text-align: left;
+  font-size: 2em;
+  font-weight: 200;
+}
+/* section h2 {
+  color: white;
+  font-size: 4em;
+  font-weight: 300;
+}  */
+.slide-down {
+  overflow: hidden;
+  padding-bottom: 2em;
+ }
+.slide-down h2 {
+  color:azure;
+  font-size: 1.5em;
+  line-height: none;
+  font-weight: 500;
+  animation:1s slide-down 3s forwards;
+  transform:translateY(-100%);
+}
+@keyframes slide-down {
+to {
+ transform:translateX(0%);
+}
+}
+.brand-btn {
+  display: flex;
+  align-content: flex-start;
+  margin-right: auto;
+}
+
+  #toggle-btn {
+   display:flex;
+   align-self:auto; 
+   margin-left: 1em;
+   font-weight: 100;
+   box-shadow: none; 
+   border: 0px; 
+   color:#dbdfdf;
+   background: #323358;  
+  }
+
+  #toggle-btn:hover {
+    color:#7693B6;
+    /* cursor: pointer; */
+    opacity: 1rem;
+    /* color: steelblue; */
+  }
+ 
+  #theme {
+    width: 100vw;
+    height: 100vh;
+  }
+  a {
+    text-decoration: none;
+    color: azure;
+  }
+/* light mode */
+
+.dark-mode-theme {
+  background: #212529;
+  opacity:100%;
+  color: var(--background-color);
+}
+.dark-mode-theme a:hover {
+  color: #7693B6;
 }
