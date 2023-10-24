@@ -1,0 +1,20 @@
+{
+  "name": "port-home-page",
+  "version": "1.0.0",
+  "description": "portfolio landing page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass src/Sass:src/Css --watch --no-source-map"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jaime-Ginesky/port-home-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jaime-Ginesky/port-home-page/issues"
+  },
+  "homepage": "https://github.com/Jaime-Ginesky/port-home-page#readme"
+}
