@@ -67,7 +67,7 @@ body {
   border-radius: 80%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   cursor: pointer;
-  transform-origin: center 60%;
+  transform-origin: center 70%;
   transform: scale(1);
   transition: all 0.35s ease-out;
 }
@@ -162,8 +162,7 @@ main p {
   font-size: 4vw;
   font-weight: 300;
 }
-main p .highlight {
-  background: white;
+main h1 {
   color: tomato;
-  font-size: 4vw;
+  font-size: 6vw;
 }
