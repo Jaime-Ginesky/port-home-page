@@ -69,3 +69,11 @@ toggleBtn.addEventListener("click", (e) => {
         disableDarkMode();
     }
 });
+
+// const linkElement = document.createElement('a');
+//     linkElement.href = link;
+//     linkElement.classList.add('button', 'glow-button');
+//     linkElement.target = '_blank';
+//     linkElement.textContent = 'GO';
+
+//     contentElement.appendChild(linkElement);
