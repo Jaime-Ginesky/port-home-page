@@ -10,8 +10,6 @@
   box-sizing: inherit;
 }
 
-
-
 body {
   font-family: "Poppins", sans-serif;
   height: 100vh;
@@ -21,6 +19,7 @@ body {
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
 }
+
 
 .material-menu-wrapper {
   position: absolute;
@@ -181,6 +180,9 @@ section.active {
   letter-spacing: .05em;
   /* line-height: none; */
 }
+.home-title {
+  color:azure;
+}
 .home-container h3 {
   color: azure;
   text-align: left;
@@ -212,6 +214,18 @@ to {
   display: flex;
   align-content: flex-start;
   margin-right: auto;
+  text-decoration:underline;
+  color:#dbdfdf;
+}
+
+.brand {
+  color: tomato;
+  font-size: 4em;
+}
+ 
+.brand2 {
+  color: azure;
+  font-size: 4em;
 }
 
   #toggle-btn {
