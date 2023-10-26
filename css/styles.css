@@ -14,11 +14,16 @@ body {
   font-family: "Poppins", sans-serif;
   height: 100vh;
   line-height: 1.3;
-  background: #374049;
+  background: #e3d4c0;
   overflow: hidden;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
 }
+
+/* .dark-mode-theme body {
+  background: #374049;
+} */
+
 /* a {
   text-decoration: none;
   color:azure;
@@ -86,6 +91,10 @@ body {
   transition: all 0.35s ease-out;
 }
 
+.dark-mode-theme .material-btn:before {
+  background:#3b3834;
+}
+
 .material-content {
   padding: 5% 15%;
   position: absolute;
@@ -134,6 +143,10 @@ nav a {
   opacity: 80%;
 }
 
+.dark-mode-theme nav a:hover {
+  color: azure;
+}
+
 .material-hamburger {
   transition: all 0.3s ease-out;
 }
@@ -146,6 +159,9 @@ nav a {
   opacity: 1;
   transform: translate(0) rotate(0deg);
   transition: all 0.2s ease-out;
+}
+.dark-mode-theme .material-hamburger .material-patty {
+  background: #dbdfdf;
 }
 .material-hamburger .material-patty:last-child {
   margin-bottom: 0;
@@ -189,7 +205,7 @@ section.active {
   color:azure;
 }
 .home-container h3 {
-  color: azure;
+  color: #374049;
   text-align: left;
   font-size: 2em;
   font-weight: 200;
@@ -204,7 +220,7 @@ section.active {
   padding: 2em;
  }
 .slide-down h2 {
-  color:azure;
+  color:#374049;
   font-size: 1.2em;
   font-weight: 300;
   animation:2s slide-down 2s forwards;
@@ -214,6 +230,9 @@ section.active {
 to {
  transform:translateX(0%);
 }
+}
+.dark-mode-theme .slide-down h2 {
+  color:azure;
 }
 .header {
   display: flex;
@@ -298,8 +317,8 @@ a:focus {
    box-shadow: none; 
    padding-top: 50px;
    border: 0px; 
-   color:#dbdfdf;
-   background: #374049;
+   color:#374049;
+   background:#e3d4c0;
    cursor: pointer;
   }
 
@@ -314,17 +333,25 @@ a:focus {
     width: 100vw;
     height: 100vh;
   }
+
   a {
     text-decoration: none;
     color: azure;
   }
 /* light mode */
-
+.dark-mode-theme #toggle-btn {
+  background: #333333;
+  color:azure;
+}
 .dark-mode-theme {
-  background: #212529;
+  background:#333333;
   opacity:100%;
   color: var(--background-color);
 }
-.dark-mode-theme a:hover {
-  color: #7693B6;
+.dark-mode-theme #toggle-btn:hover {
+  color: tomato;
+}
+.dark-mode-theme .home-container h3 {
+  color:azure;
+  font-weight: 200;
 }
