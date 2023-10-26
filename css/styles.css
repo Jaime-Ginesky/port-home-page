@@ -221,6 +221,7 @@ to {
   justify-content: flex-start;
   align-content: flex-start;
   margin-right: auto;
+  padding: 1em;
 }
 .header.active {
   z-index: 3;
@@ -241,10 +242,17 @@ a.brand-btn {
   pointer-events: none;
   color:#dbdfdf;
 }
-.brand2 {
+.brand-btn:hover {
+  color:azure;
+}
+a.brand2 {
   color: azure;
   font-size: 4em;
   text-decoration: underline;
+  cursor: pointer;
+}
+.brand2:hover {
+  color: tomato;
 }
 
 /* 
@@ -296,7 +304,7 @@ a:focus {
   }
 
   #toggle-btn:hover {
-    color:#7693B6;
+    color:tomato;
     /* cursor: pointer; */
     opacity: 1rem;
     /* color: steelblue; */
