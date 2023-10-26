@@ -19,7 +19,10 @@ body {
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
 }
-
+#theme {
+  width: 100vw;
+  height: 100vh;
+}
 /* .dark-mode-theme body {
   background: #374049;
 } */
@@ -141,6 +144,9 @@ nav a {
   color: tomato;
   font-weight: 400;
   opacity: 80%;
+}
+nav a:hover {
+  color: #374049;
 }
 
 .dark-mode-theme nav a:hover {
@@ -329,10 +335,6 @@ a:focus {
     /* color: steelblue; */
   }
  
-  #theme {
-    width: 100vw;
-    height: 100vh;
-  }
 
   a {
     text-decoration: none;
