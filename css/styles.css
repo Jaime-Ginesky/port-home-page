@@ -218,6 +218,7 @@ to {
 .header {
   display: flex;
   flex-wrap: nowrap;
+  justify-content: flex-start;
   align-content: flex-start;
   margin-right: auto;
 }
@@ -227,6 +228,7 @@ to {
 }
 a.brand-btn {
   /* display: flex;
+  justify-content: flex-start;
   flex-wrap: nowrap;
   align-content: flex-start;
   margin-right: auto; */
@@ -235,7 +237,7 @@ a.brand-btn {
   font-size: 4em;
   cursor: pointer;
 }
-a.brand-btn:after {
+.brand-btn:after {
   pointer-events: none;
   color:#dbdfdf;
 }
