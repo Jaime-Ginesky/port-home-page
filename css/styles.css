@@ -12,11 +12,6 @@ html {
 }
 
 
- #theme {
-    width: 100vw;
-    height: 100vh;
-  }
-
 body {
   font-family: "Poppins", sans-serif;
   height: 100vh;
@@ -26,11 +21,11 @@ body {
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
 }
-/* body.dark-mode-theme {
+body.dark-mode-theme {
   background:#797269;
   opacity:100%;
   color: var(--background-color);
-} */
+}
 
 
 /* .dark-mode-theme body {
@@ -319,7 +314,7 @@ a:focus {
   color:#dbdfdf;
 } */
 
-  #toggle-btn {
+  button#toggle-btn {
    display:flex;
    align-self:auto; 
    text-decoration: none;
@@ -329,7 +324,7 @@ a:focus {
    box-shadow: none; 
    padding-top: 50px;
    border: 0px; 
-   color:#374049;
+   color:#556a7e;
    background:#e3d4c0;
    cursor: pointer;
   }
@@ -340,7 +335,10 @@ a:focus {
     opacity: 1rem;
     /* color: steelblue; */
   }
- 
+  #theme {
+    width: 100vw;
+    height: 100vh;
+  }
  
   a {
     text-decoration: none;
