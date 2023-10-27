@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Arvo&family=Gruppo&family=Inclusive+Sans&family=Karla:ital,wght@1,500&family=Nixie+One&family=Noto+Sans+SC:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Arvo&family=Gruppo&family=Inclusive+Sans&family=Karla:ital,wght@1,500&family=Nixie+One&family=Noto+Sans+SC:wght@700&display=swap');
 
@@ -10,6 +11,12 @@ html {
   box-sizing: inherit;
 }
 
+
+ #theme {
+    width: 100vw;
+    height: 100vh;
+  }
+
 body {
   font-family: "Poppins", sans-serif;
   height: 100vh;
@@ -19,6 +26,12 @@ body {
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
 }
+/* body.dark-mode-theme {
+  background:#797269;
+  opacity:100%;
+  color: var(--background-color);
+} */
+
 
 /* .dark-mode-theme body {
   background: #374049;
@@ -328,11 +341,7 @@ a:focus {
     /* color: steelblue; */
   }
  
-  #theme {
-    width: 100vw;
-    height: 100vh;
-  }
-
+ 
   a {
     text-decoration: none;
     color: azure;
@@ -342,16 +351,11 @@ a:focus {
   background: #797269;
   color:azure;
 }
-.dark-mode-theme {
-  background:#797269;
-  opacity:100%;
-  color: var(--background-color);
-}
+
 .dark-mode-theme #toggle-btn:hover {
   color: tomato;
 }
 .dark-mode-theme .home-container h3 {
   color:azure;
-
 }
 
