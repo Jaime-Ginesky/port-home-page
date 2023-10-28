@@ -195,12 +195,17 @@ section {
   overflow: hidden;
   transition: all 0.35s ease-out;
   line-height: .3;
-}
-section.active {
+} 
+ section.active {
   opacity: 0;
   transform: translate(-700px, 0px);
+} 
+.home-container {
+  font-family: "Poppins", sans-serif;
+  width: 100vw;
+  text-align: center;
+  opacity: 80%;
 }
-
 .home-container h1 {
   white-space: nowrap;
   color: tomato;
@@ -222,19 +227,13 @@ section.active {
   font-weight: 200;
 }
 
-/* section h2 {
-  color: white;
-  font-size: 4em;
-  font-weight: 300;
-}  */
 .slide-down {
   overflow: hidden;
-  padding: 2em;
+  padding: .2em;
  }
 .slide-down h2 {
   color:#374049;
   font-size: 1.2em;
-  font-weight: 300;
   animation:2s slide-down 2s forwards;
   transform:translateY(-100%);
 }
