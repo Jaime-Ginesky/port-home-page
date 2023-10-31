@@ -16,13 +16,17 @@ body {
   font-family: "Poppins", sans-serif;
   height: 100vh;
   line-height: 1.3;
-  background:#e3d4c0;
+  background-image: url("../src/media/IMG_5365\ 3.JPG");
+  opacity:.9;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background:#faf9f8; */
   overflow: hidden;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
 }
 body.dark-mode-theme {
-  background:#797269;
+  background:#0c0c0c;
   opacity:100%;
   color: var(--background-color);
 }
@@ -90,7 +94,8 @@ body.dark-mode-theme {
   z-index: -3;
   width: 80px;
   height: 80px;
-  background: #dbdfdf;
+  background:#374049;
+  opacity: .6;
   border-radius: 80%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   cursor: pointer;
@@ -101,6 +106,7 @@ body.dark-mode-theme {
 
 .dark-mode-theme .material-btn:before {
   background:#3b3834;
+  box-shadow: 0 5px 10px #de7446;
 }
 
 .material-content {
@@ -125,7 +131,7 @@ nav li {
   margin: 15px 0;
   transform: translateX(100px);
   opacity: 0;
-  transition: all 0.3s ease-out;
+  transition: all 0.3s ease-in-out;
 }
 nav li.active {
   transform: translateX(0);
@@ -135,20 +141,20 @@ nav li:nth-child(1) {
   transition-delay: 0.1s;
 }
 nav li:nth-child(2) {
-  transition-delay: 0.2s;
+  transition-delay: 0.15s;
 }
 nav li:nth-child(3) {
-  transition-delay: 0.3s;
+  transition-delay: 0.2s;
 }
 nav li:nth-child(4) {
-  transition-delay: 0.4s;
+  transition-delay: 0.2s;
 }
 nav a {
   text-decoration: none;
   font-size: 8vw;
-  color: tomato;
+  color: rgb(174, 105, 80);
   font-weight: 400;
-  opacity: 80%;
+  /* opacity: 90%; */
 }
 nav a:hover {
   color: #374049;
@@ -193,7 +199,7 @@ section {
   height: 100vw;
   padding: 12vw;
   overflow: hidden;
-  transition: all 0.35s ease-out;
+  transition: all 0.2s ease-in-out;
   line-height: .3;
 } 
  section.active {
@@ -204,27 +210,32 @@ section {
   font-family: "Poppins", sans-serif;
   width: 100vw;
   text-align: center;
-  opacity: 80%;
+  /* opacity: 80%;
+  background:#556a7e;
+  border-radius: 15px; */
 }
 .home-container h1 {
   white-space: nowrap;
-  color: tomato;
+  color: #374049;
   font-family: "Archivo Black", sans-serif;
   font-weight: 400;
-  font-size: 7vw;
+  font-size: 12vw;
   opacity: 80%;
   text-align: left;
   letter-spacing: .05em;
   /* line-height: none; */
 }
 .home-title {
-  color:azure;
+  padding-top: 100px;
+  color:rgb(174, 105, 80);
+  opacity: .6;
+  font-size: 14vw;
 }
 .home-container h3 {
   color: #374049;
   text-align: left;
   font-size: 2em;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .slide-down {
@@ -233,13 +244,13 @@ section {
  }
 .slide-down h2 {
   color:#374049;
-  font-size: 1.2em;
-  animation:2s slide-down 2s forwards;
-  transform:translateY(-100%);
+  font-size: 2em;
+  animation:3s slide-down 1s forwards;
+  transform:translateX(-580%);
 }
 @keyframes slide-down {
 to {
- transform:translateX(0%);
+ transform:translateY(0%);
 }
 }
 .dark-mode-theme .slide-down h2 {
@@ -259,7 +270,7 @@ to {
 }
 a.brand-btn {
   text-decoration:underline;
-  color:tomato;
+  color:rgb(174, 105, 80);
   font-size: 4em;
   cursor: pointer;
 }
@@ -268,16 +279,16 @@ a.brand-btn {
   color:#dbdfdf;
 }
 .brand-btn:hover {
-  color:azure;
+  color: #374049;
 }
 a.brand2 {
-  color: azure;
+  color:#374049;
   font-size: 4em;
   text-decoration: underline;
   cursor: pointer;
 }
 .brand2:hover {
-  color: tomato;
+  color: rgb(174, 105, 80);
 }
 
 /* 
@@ -323,13 +334,13 @@ a:focus {
    box-shadow: none; 
    padding-top: 50px;
    border: 0px; 
-   color:#556a7e;
-   background:#e3d4c0;
+   color:#374049;
+   background:none;
    cursor: pointer;
   }
 
   #toggle-btn:hover {
-    color:tomato;
+    color:rgb(174, 105, 80);
     /* cursor: pointer; */
     opacity: 1rem;
     /* color: steelblue; */
