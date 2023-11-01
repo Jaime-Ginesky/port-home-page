@@ -109,7 +109,7 @@ body.dark-mode-theme {
 
 .dark-mode-theme .material-btn:before {
   background:#3b3834;
-  box-shadow: 0 5px 10px #de7446;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .material-content {
@@ -212,7 +212,7 @@ section {
 .home-container {
   font-family: "Poppins", sans-serif;
   width: 100vw;
-  text-align: center;
+  text-align: left;
   /* opacity: 80%;
   background:#556a7e;
   border-radius: 15px; */
@@ -226,6 +226,7 @@ section {
   opacity: 80%;
   text-align: left;
   letter-spacing: .05em;
+  padding-top: 50px;
   /* line-height: none; */
 }
 .home-title {
@@ -247,9 +248,10 @@ section {
  }
 .slide-down h2 {
   color:#374049;
-  font-size: 2em;
+  font-size: 2.5em;
   animation:3s slide-down 1s forwards;
   transform:translateX(-580%);
+  font-weight: 400;
 }
 @keyframes slide-down {
 to {
