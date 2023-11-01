@@ -27,6 +27,9 @@ body {
 }
 body.dark-mode-theme {
   background:#0c0c0c;
+  background-image: url("../src/media/IMG_darkmatte.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   opacity:100%;
   color: var(--background-color);
 }
@@ -356,7 +359,7 @@ a:focus {
   }
 /* light mode */
 .dark-mode-theme #toggle-btn {
-  background: #797269;
+  background:none;
   color:azure;
 }
 
