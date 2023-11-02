@@ -421,18 +421,21 @@ footer {
   color: steelblue;
   font-size: 2em;
 }
-.source-link {
+.source-link a {
   
-  color: azure;
+  color: #747e88;
   font-size: .3em;
 }
 .footer-link {
-  color: azure;
+  color: #747e88;
   text-decoration: none;
 }
 .footer-link:hover {
-  color:#7693B6;
+  color:rgb(174, 105, 80);
 }
-.dark-mode-theme .source-link {
-  color: #374049;
+.dark-mode-theme .source-link  {
+  color: azure;
+}
+footer.dark-mode-theme {
+  color:azure;
 }
