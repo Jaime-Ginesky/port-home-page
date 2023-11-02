@@ -15,12 +15,11 @@ body {
   font-family: "Poppins", sans-serif;
   height: 100vh;
   line-height: 1.3;
-  text-align: left;
   /* background-image: url("../src/media/IMG_5365\ 3.JPG");
   opacity:.9;
   background-repeat: no-repeat;
   background-size: cover; */
-  /* background:#faf9f8; */
+  background:#faf9f8;
   overflow: hidden;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
@@ -32,6 +31,9 @@ body {
   background-size: cover;
 }
 body.dark-mode-theme {
+  background: #0c0c0c;
+}
+.about-body.dark-mode-theme {
   background:#0c0c0c;
   background-image: url("../src/media/IMG_darkmatte.jpg");
   background-repeat: no-repeat;
@@ -103,10 +105,10 @@ body.dark-mode-theme {
   z-index: -3;
   width: 80px;
   height: 80px;
-  background:#374049;
+  background:#ccbca8;
   opacity: .6;
   border-radius: 80%;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 5px 10px rgba(117, 92, 74, 0.978);
   cursor: pointer;
   transform-origin: center 70%;
   transform: scale(1);
@@ -163,7 +165,7 @@ nav a {
   font-size: 8vw;
   color: rgb(174, 105, 80);
   font-weight: 400;
-  /* opacity: 90%; */
+  opacity: .5;
 }
 nav a:hover {
   color: #374049;
@@ -206,7 +208,9 @@ section {
   will-change: transform, opacity;
   width: 80vw;
   height: 100vw;
-  padding: 12vw;
+  padding: 5vw;
+  margin-left: 1vw;
+  /* padding: 12vw; */
   overflow: hidden;
   transition: all 0.2s ease-in-out;
   line-height: .3;
@@ -372,16 +376,16 @@ a:focus {
 }
 
 .dark-mode-theme #toggle-btn:hover {
-  color: tomato;
+  color: rgb(174, 105, 80);
 }
 .dark-mode-theme .home-container h3 {
   color:azure;
 }
 .about-container h3 {
-  padding-top: 5px;
+  padding-top: 6px;
   color: #374049;
   font-size: 1.5em;
-  font-weight: 300;
+  font-weight: 500;
   line-height: normal;
 }
 .dark-mode-theme .about-container h3 {
@@ -408,3 +412,27 @@ a:focus {
   opacity: .6;
   font-size: 14vw;
 } */
+
+footer {
+  display: flex;
+  align-content:flex-end;
+  justify-content: center;
+  margin: 5em;
+  color: steelblue;
+  font-size: 2em;
+}
+.source-link {
+  
+  color: azure;
+  font-size: .3em;
+}
+.footer-link {
+  color: azure;
+  text-decoration: none;
+}
+.footer-link:hover {
+  color:#7693B6;
+}
+.dark-mode-theme .source-link {
+  color: #374049;
+}
