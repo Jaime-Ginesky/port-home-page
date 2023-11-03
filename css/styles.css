@@ -423,8 +423,16 @@ a.brand2 {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  color: rgb(174, 105, 80);
  }
+ i#linked-link {
+  color:rgb(174, 105, 80);
+  font-size: 7em;
+ }
+ i#linked-link:hover { 
+  color:#374049;
+ }
+ 
+
 /* .about-title {
   padding-top: 100px;
   color:rgb(174, 105, 80);
