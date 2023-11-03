@@ -401,6 +401,30 @@ a.brand2 {
     font-size: 13vw;
     padding-bottom: 10vw;
  }
+ .contact-container h1 {
+  white-space: nowrap;
+  color: #374049;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-size: 9vw;
+  opacity: 80%;
+  text-align: left;
+  letter-spacing: .05em;
+  padding-top: 1px;
+ }
+ .contact-title {
+  padding-top: 100px;
+  color:rgb(174, 105, 80);
+  opacity: .6;
+  font-size: 10vw;
+  padding-bottom: 10vw;
+ }
+ .contact-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: rgb(174, 105, 80);
+ }
 /* .about-title {
   padding-top: 100px;
   color:rgb(174, 105, 80);
