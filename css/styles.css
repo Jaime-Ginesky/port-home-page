@@ -424,11 +424,11 @@ a.brand2 {
   align-items: center;
   justify-content: space-around;
  }
-  .fa-icon {
+  .fa {
   color:rgb(174, 105, 80);
   font-size: 7em;
  }
- .fa-icon:hover { 
+ .fa:hover { 
   color:#374049;
  }
  
@@ -518,6 +518,18 @@ footer.dark-mode-theme {
   }
   
   /* dark mode background on card */
+  .dark-mode-theme .container {
+    color: white;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: 5px; 
+    overflow: hidden;
+    border-radius: 300px;
+  }
+  .dark-mode-theme .container .card {
+    color: white;
+  }
   .dark-mode-theme .container .card .imgC {
      background-image: radial-gradient(azure, var(--image-text-color));
   }
