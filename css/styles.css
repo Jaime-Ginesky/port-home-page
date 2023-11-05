@@ -416,7 +416,7 @@ a.brand2 {
   padding-top: 100px;
   color:rgb(174, 105, 80);
   opacity: .6;
-  font-size: 10vw;
+  font-size: 9vw;
   padding-bottom: 10vw;
  }
  .contact-link {
@@ -424,11 +424,11 @@ a.brand2 {
   align-items: center;
   justify-content: space-around;
  }
- i#linked-link {
+  .fa-icon {
   color:rgb(174, 105, 80);
   font-size: 7em;
  }
- i#linked-link:hover { 
+ .fa-icon:hover { 
   color:#374049;
  }
  
