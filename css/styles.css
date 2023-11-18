@@ -103,8 +103,8 @@ body.dark-mode-theme {
   top: 0;
   left: 0;
   z-index: -3;
-  width: 80px;
-  height: 80px;
+  width: 75px;
+  height: 75px;
   background:#ccbca8;
   opacity: .6;
   border-radius: 80%;
@@ -162,7 +162,7 @@ nav li:nth-child(4) {
 }
 nav a {
   text-decoration: none;
-  font-size: 8vw;
+  font-size: 9vw;
   color: rgb(174, 105, 80);
   font-weight: 400;
   opacity: .5;
@@ -180,9 +180,9 @@ nav a:hover {
 }
 .material-hamburger .material-patty {
   will-change: transform, opacity;
-  width: 40px;
-  height: 3px;
-  margin: 6px 0 8px 8px;
+  width: 2vw;
+  height: .2vh;
+  margin: 2px 3px 8px 0;
   background: #333333;
   opacity: 1;
   transform: translate(0) rotate(0deg);
@@ -207,9 +207,9 @@ nav a:hover {
 section {
   will-change: transform, opacity;
   width: 80vw;
-  height: 100vw;
-  padding: 5vw;
-  margin-left: 1vw;
+  height: 80vh;
+  padding: 3em 0 5em;
+  margin-left: 4em;
   /* padding: 12vw; */
   overflow: hidden;
   transition: all 0.2s ease-in-out;
@@ -219,6 +219,11 @@ section {
   opacity: 0;
   transform: translate(-700px, 0px);
 } 
+
+.dark-mode-theme section {
+  width: auto;
+  height: 100%;
+}
 .home-container {
   font-family: "Poppins", sans-serif;
   width: 100vw;
@@ -254,7 +259,8 @@ section {
 
 .slide-down {
   overflow: hidden;
-  padding-bottom: .2em;
+  padding-bottom: 1em;
+  padding-top: 0;
  }
 .slide-down h2 {
   color:#374049;
@@ -349,12 +355,17 @@ a.brand2 {
 .dark-mode-theme .home-container h3 {
   color:azure;
 }
+.about-container {
+  padding-top: 135px;
+}
 .about-container h3 {
-  padding-top: 6px;
   color: #374049;
   font-size: 1.5em;
   font-weight: 500;
   line-height: normal;
+}
+.about-container h2 {
+  padding-bottom: 40px;
 }
 .dark-mode-theme .about-container h3 {
   color:azure;
@@ -371,7 +382,6 @@ a.brand2 {
   opacity: 80%;
   text-align: left;
   letter-spacing: .05em;
-  padding-top: 5px;
   /* line-height: none; */
  } 
  .projects-container {
@@ -520,12 +530,6 @@ footer.dark-mode-theme {
   /* dark mode background on card */
   .dark-mode-theme .container {
     color: white;
-    position: relative;
-    width: 250px;
-    height: 250px;
-    margin: 5px; 
-    overflow: hidden;
-    border-radius: 300px;
   }
   .dark-mode-theme .container .card {
     color: white;
