@@ -145,7 +145,7 @@ body.dark-mode-theme {
 
 nav ul {
   list-style-type: none;
-  padding: 0;
+  padding-top: 1em;
   text-align: right;
 }
 nav li {
@@ -219,9 +219,8 @@ section {
   will-change: transform, opacity;
   width: 80vw;
   height: 80vh;
-  padding: 3em 0 5em;
+  padding: 3em 0 3em;
   margin-left: 3em;
-
   /* padding: 12vw; */
   overflow: hidden;
   transition: all 0.2s ease-in-out;
@@ -241,6 +240,7 @@ section {
   width: 80vw;
   text-align: left;
   padding-top: 10em;
+  margin-bottom: 10em;
   /* opacity: 80%;
   background:#556a7e;
   border-radius: 15px; */
@@ -269,7 +269,7 @@ section {
   opacity: 80%;
   text-align: left;
   letter-spacing: .05em;
-  padding-top: 1px;
+  /* padding-top: .1em; */
   /* line-height: none; */
 }
 .home-title {
@@ -277,17 +277,19 @@ section {
   color:rgb(174, 105, 80);
   opacity: .6;
   font-size: 14vw;
+  padding-bottom: 4em;
 }
 
 
 .slide-down {
   overflow: hidden;
-  padding-bottom: 1em;
-  padding-top: 0;
+   /* padding-bottom: 3em; */
+   padding: 1em; 
   white-space: nowrap;
+  margin-left: 2em;
  }
-.slide-down h2 {
-  color:#374049;
+ .slide-down h2 {
+  color:#2d343c;
   font-size: 1.5em;
   animation:3s slide-down 1s forwards;
   transform:translateX(-580%);
