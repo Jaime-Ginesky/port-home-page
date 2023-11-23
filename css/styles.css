@@ -4,6 +4,11 @@
 
 html {
   box-sizing: border-box;
+  /* position:fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; */
 }
  *:before, *:after {
   margin: 0;
@@ -13,7 +18,8 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  height: 100vh;
+  height: auto;
+  width: 100vw;
   line-height: 1.3;
   background-image: url("../src/media/IMG_5365\ 3.JPG");
   opacity:.9;
@@ -218,8 +224,8 @@ nav a:hover {
 section {
   will-change: transform, opacity;
   width: 80vw;
-  height: 80vh;
-  padding: 3em 0 3em;
+  height: 100vh;
+  padding: 3em;
   margin-left: 3em;
   /* padding: 12vw; */
   overflow: hidden;
@@ -240,7 +246,6 @@ section {
   width: 80vw;
   text-align: left;
   padding-top: 10em;
-  margin-bottom: 10em;
   /* opacity: 80%;
   background:#556a7e;
   border-radius: 15px; */
@@ -273,11 +278,10 @@ section {
   /* line-height: none; */
 }
 .home-title {
-  padding-top: 100px;
+  padding-top: .4em;
   color:rgb(174, 105, 80);
   opacity: .6;
   font-size: 14vw;
-  padding-bottom: 4em;
 }
 
 
@@ -464,11 +468,11 @@ a.brand2 {
 
 footer {
   display: flex;
-  align-content:flex-end;
+  /* align-content:flex-end; */
   justify-content: center;
-  margin: 5em;
   color: steelblue;
   font-size: 2em;
+  width:100%;
 }
 .source-link a {
   
