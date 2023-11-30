@@ -49,6 +49,8 @@ text {
   background-repeat: no-repeat;
   background-size: cover;
 } */
+
+/* dark mode */
 body.dark-mode-theme {
   background:#0c0c0c;
   background-image: url("../src/media/IMG_darkmatte.jpg");
@@ -58,6 +60,99 @@ body.dark-mode-theme {
   color: var(--background-color);
 }
 
+nav ul {
+  list-style-type: none;
+  padding-top: 1em;
+  text-align: right;
+}
+nav li {
+  will-change: transform, opacity;
+  margin: 15px 0;
+  transform: translateX(100px);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+nav li.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+nav li:nth-child(1) {
+  transition-delay: 0.1s;
+}
+nav li:nth-child(2) {
+  transition-delay: 0.15s;
+}
+nav li:nth-child(3) {
+  transition-delay: 0.2s;
+}
+nav li:nth-child(4) {
+  transition-delay: 0.2s;
+}
+nav a {
+  text-decoration: none;
+  font-size: 9vw;
+  color: rgb(174, 105, 80);
+  font-weight: 400;
+  opacity: .5;
+}
+nav a:hover {
+  color: #374049;
+}
+
+section {
+  will-change: transform, opacity;
+  width: 80vw;
+  height: 100vh;
+  padding: 3em;
+  margin-left: 3em;
+  /* padding: 12vw; */
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  line-height: .3;
+} 
+ section.active {
+  opacity: 0;
+  transform: translate(-700px, 0px);
+} 
+footer {
+  display: flex;
+  /* align-content:flex-end; */
+  justify-content: center;
+  color: steelblue;
+  font-size: 2em;
+  width:100%;
+}
+
+button#toggle-btn {
+  display:flex;
+  align-self:auto; 
+  text-decoration: none;
+  margin-left: 1em;
+  font-weight: 100;
+  font-size: 1.2em;
+  box-shadow: none; 
+  padding-top: 50px;
+  border: 0px; 
+  color:#374049;
+  background:none;
+  cursor: pointer;
+ }
+
+ #toggle-btn:hover {
+   color:rgb(174, 105, 80);
+   /* cursor: pointer; */
+   opacity: 1rem;
+   /* color: steelblue; */
+ }
+ #theme {
+   width: 100vw;
+   height: 100vh;
+ }
+
+ a {
+   text-decoration: none;
+   color: azure;
+ }
 
 
 /* .dark-mode-theme body {
@@ -149,44 +244,6 @@ body.dark-mode-theme {
   z-index: 3;
 }
 
-nav ul {
-  list-style-type: none;
-  padding-top: 1em;
-  text-align: right;
-}
-nav li {
-  will-change: transform, opacity;
-  margin: 15px 0;
-  transform: translateX(100px);
-  opacity: 0;
-  transition: all 0.3s ease-in-out;
-}
-nav li.active {
-  transform: translateX(0);
-  opacity: 1;
-}
-nav li:nth-child(1) {
-  transition-delay: 0.1s;
-}
-nav li:nth-child(2) {
-  transition-delay: 0.15s;
-}
-nav li:nth-child(3) {
-  transition-delay: 0.2s;
-}
-nav li:nth-child(4) {
-  transition-delay: 0.2s;
-}
-nav a {
-  text-decoration: none;
-  font-size: 9vw;
-  color: rgb(174, 105, 80);
-  font-weight: 400;
-  opacity: .5;
-}
-nav a:hover {
-  color: #374049;
-}
 
 .dark-mode-theme nav a:hover {
   color: azure;
@@ -221,21 +278,6 @@ nav a:hover {
   transform: translate(-10px, -4px) rotate(45deg) scale(0.5, 1);
 }
 
-section {
-  will-change: transform, opacity;
-  width: 80vw;
-  height: 100vh;
-  padding: 3em;
-  margin-left: 3em;
-  /* padding: 12vw; */
-  overflow: hidden;
-  transition: all 0.2s ease-in-out;
-  line-height: .3;
-} 
- section.active {
-  opacity: 0;
-  transform: translate(-700px, 0px);
-} 
 
 /* .dark-mode-theme section {
   width: auto;
@@ -343,36 +385,7 @@ a.brand2 {
 }
 
 
-  button#toggle-btn {
-   display:flex;
-   align-self:auto; 
-   text-decoration: none;
-   margin-left: 1em;
-   font-weight: 100;
-   font-size: 1.2em;
-   box-shadow: none; 
-   padding-top: 50px;
-   border: 0px; 
-   color:#374049;
-   background:none;
-   cursor: pointer;
-  }
-
-  #toggle-btn:hover {
-    color:rgb(174, 105, 80);
-    /* cursor: pointer; */
-    opacity: 1rem;
-    /* color: steelblue; */
-  }
-  #theme {
-    width: 100vw;
-    height: 100vh;
-  }
  
-  a {
-    text-decoration: none;
-    color: azure;
-  }
 /* light mode */
 .dark-mode-theme #toggle-btn {
   background:none;
@@ -466,14 +479,7 @@ a.brand2 {
   font-size: 14vw;
 } */
 
-footer {
-  display: flex;
-  /* align-content:flex-end; */
-  justify-content: center;
-  color: steelblue;
-  font-size: 2em;
-  width:100%;
-}
+
 .source-link a {
   
   color: #747e88;
