@@ -514,10 +514,10 @@ footer.dark-mode-theme {
   .container .card {
     position: relative;
     width: 250px;
-    height: 250px;
-    margin: 5px; 
+    height: 200px;
+    margin: 30px; 
     overflow: hidden;
-    border-radius: 300px;
+    border-radius: 10px;
   }
   /* background and content  */
   .container .card .imgC,
